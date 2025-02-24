@@ -165,7 +165,8 @@ namespace LibraryManager
 
         private void LoadBooks()
         {
-            try { 
+            try
+            {
                 if (File.Exists("books.json"))
                 {
                     string json = File.ReadAllText("books.json");
@@ -187,24 +188,24 @@ namespace LibraryManager
 
         private void comboBoxSort_SelectedIndexChanged(object sender, EventArgs e)
         {
-                string sortBy = comboBoxSort.SelectedItem.ToString();
+            string sortBy = comboBoxSort.SelectedItem.ToString();
 
-                if (sortBy == "Title")
-                {
-                    books = books.OrderBy(b => b.Title).ToList();
-                }
-                else if (sortBy == "Author")
-                {
-                    books = books.OrderBy(b => b.Author).ToList();
-                }
-                else if (sortBy == "Year")
-                {
-                    books = books.OrderBy(b => b.Year).ToList();
-                }
+            if (sortBy == "Title")
+            {
+                books = books.OrderBy(b => b.Title).ToList();
+            }
+            else if (sortBy == "Author")
+            {
+                books = books.OrderBy(b => b.Author).ToList();
+            }
+            else if (sortBy == "Year")
+            {
+                books = books.OrderBy(b => b.Year).ToList();
+            }
 
-                dataGridView1.DataSource = null;
-                dataGridView1.DataSource = books;
-            
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = books;
+
         }
 
         private void textFilter_TextChanged(object sender, EventArgs e)
@@ -242,6 +243,16 @@ namespace LibraryManager
         {
             int totalBooks = CountTotalBooks();
             labelTotalBooks.Text = $"Total Books: {totalBooks}";
+        }
+
+        private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
+        {
+
+        }
+
+        private void openFileDialog1_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+
         }
     }
 }

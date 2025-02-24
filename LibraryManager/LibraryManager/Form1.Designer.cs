@@ -177,7 +177,7 @@
             // 
             // buttonExport
             // 
-            buttonExport.Location = new Point(677, 65);
+            buttonExport.Location = new Point(613, 65);
             buttonExport.Name = "buttonExport";
             buttonExport.Size = new Size(75, 23);
             buttonExport.TabIndex = 16;
@@ -190,9 +190,9 @@
             labelTotalBooks.AutoSize = true;
             labelTotalBooks.Location = new Point(162, 168);
             labelTotalBooks.Name = "labelTotalBooks";
-            labelTotalBooks.Size = new Size(38, 15);
+            labelTotalBooks.Size = new Size(71, 15);
             labelTotalBooks.TabIndex = 17;
-            labelTotalBooks.Text = "label4";
+            labelTotalBooks.Text = "Total Books:";
             labelTotalBooks.Click += labelTotalBooks_Click;
             // 
             // Form1

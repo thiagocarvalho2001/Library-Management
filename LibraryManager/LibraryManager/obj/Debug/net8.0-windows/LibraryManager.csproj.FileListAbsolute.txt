@@ -14,3 +14,4 @@ C:\Users\lukin\source\repos\LibraryManager\LibraryManager\obj\Debug\net8.0-windo
 C:\Users\lukin\source\repos\LibraryManager\LibraryManager\obj\Debug\net8.0-windows\LibraryManager.pdb
 C:\Users\lukin\source\repos\LibraryManager\LibraryManager\obj\Debug\net8.0-windows\LibraryManager.genruntimeconfig.cache
 C:\Users\lukin\source\repos\LibraryManager\LibraryManager\obj\Debug\net8.0-windows\ref\LibraryManager.dll
+C:\Users\lukin\source\repos\LibraryManager\LibraryManager\obj\Debug\net8.0-windows\LibraryManager.sourcelink.json
